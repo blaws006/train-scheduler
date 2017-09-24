@@ -1,0 +1,35 @@
+/**********
+GENERAL STYLE
+**********/
+body {
+	background-image: url(../images/gaming-pattern.png)
+}
+
+
+/**********
+BODY STYLE
+**********/
+.jumboStyle {
+	background-color: #4aaaa5;
+}
+
+.jumboStyle h1, .jumboStyle p {
+	color: #fff;
+}
+
+.panelBorderStyle {
+	border: 1px solid #4aaaa5;
+}
+
+.panelHeadingStyle {
+	background-color: #4aaaa5;
+	color: #fff;
+}
+
+/**********
+BUTTON STYLE
+**********/
+
+#submit-button {
+	background-color: #4aaaa5;
+}
