@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/recur.js"></script>
 </head>
 <body>
 	<div class="row">
@@ -41,14 +42,7 @@
 					    </tr>
 					  </thead>
 					  <tbody id="schedule-info">
-					    <tr>
-					      <th scope="row" id="train-num">1</th>
-					      <td id="train-name"></td>
-					      <td id="train-destination"></td>
-					      <td id="train-frequency"></td>
-					      <td id="train-arrival"></td>
-					      <td id="train-min-away"></td>
-					    </tr>
+					   
 					  </tbody>
 					</table>
 				</div>
@@ -71,8 +65,8 @@
 					    <input type="text" class="form-control" id="destination" placeholder="i.e. Atlanta">
 				 	 </div>
 				 	 <div class="form-group">
-					    <label for="traintime">First Train Time (hh:mm - military time)</label>
-					    <input type="time" class="form-control" id="time" placeholder="i.e. 12:00">
+					    <label for="traintime">First Train Time (HH:mm - military time)</label>
+					    <input type="datetime-local" class="form-control" id="time" placeholder="i.e. 12:00">
 				 	 </div>
 				 	 <div class="form-group">
 					    <label for="freq">Frequency (min)</label>
