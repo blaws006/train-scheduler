@@ -66,7 +66,7 @@ database.ref().on("child_added", function (snapshot) {
 
 	var newTrainFormat = moment(nextTrain).format("h:mm a")
 	console.log(newTrainFormat);
-	var minAway = moment.utc(moment(newTrainFormat, "hh:mm a").diff(moment(currentTime, "hh:mm a"))).fromNow("mm");
+	var minAway = moment.utc(moment(newTrainFormat, "hh:mm a").diff(moment(currentTime, "hh:mm a"))).format("mm");
 	console.log(minAway)
 
 	$("#schedule-info").append("<tr><th scope='row' id='train-num'>" + trainNum++ + "</th><td id='train-name'>" + newTrainName + "</td><td id='train-destination'>" + newTrainDest + "</td><td id='train-frequency'>" + newTrainFreq + "</td><td id='train-arrival'>" + newTrainFormat + "</td><td id='train-min-away'>" + minAway + "</td></tr>")
